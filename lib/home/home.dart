@@ -9,9 +9,8 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return StreamBuilder(
-      stream: AuthService.userStream,
+      stream: AuthService().userStream,
       builder: (context, snapshot) {
-        //still loading
         if (snapshot.connectionState == ConnectionState.waiting) {
           return const Text('loading');
         } else if (snapshot.hasError) {
