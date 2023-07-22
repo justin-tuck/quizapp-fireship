@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -9,9 +8,12 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
         body: Center(
       child: ElevatedButton(
-        child: Text('about'),
+        child: Text(
+          'topics',
+          style: Theme.of(context).textTheme.titleLarge,
+        ),
         onPressed: () =>
-            Navigator.pushNamed(context, '/about'), // routing to about page
+            Navigator.pushNamed(context, '/topics'), // routing to about page
       ),
     ));
   }
