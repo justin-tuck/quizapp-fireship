@@ -45,6 +45,8 @@ dependencies:
   # rxdart is good for working with streams and combining them with firebase
   rxdart: ^0.27.7
   cloud_firestore: ^4.8.3
+  # lets you use global streaming values without passing down through widgets
+  provider: ^6.0.5
 
 dev_dependencies:
   flutter_test:

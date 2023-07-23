@@ -23,7 +23,7 @@ class TopicsScreen extends StatelessWidget {
             child: ErrorMessage(message: snapshot.error.toString()),
           );
         } else if (snapshot.hasData) {
-          List<Topic> topics = snapshot.data!;
+          var topics = snapshot.data!;
           return Scaffold(
             appBar: AppBar(
               backgroundColor: Colors.deepPurple,
